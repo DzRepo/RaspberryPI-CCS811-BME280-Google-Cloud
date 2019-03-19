@@ -1,4 +1,4 @@
-# RaspberryPI conected CCS811/BME280 to Google Cloud
+# RaspberryPI connected CCS811/BME280 to Google Cloud
 
 ## Purpose
 
