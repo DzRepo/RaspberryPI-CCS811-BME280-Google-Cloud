@@ -54,7 +54,7 @@ Error Reporting: ```pip install google-cloud-error-reporting```
 
 *(follow the codelab for the best instructions on installing google bits & connecting to the pub/sub points!)*
 
-The BigQuery table schema is [sensorDataTable.json](). The modifications allow for the extra fields for storing eco<sub>2</sub> and tvoc.
+The BigQuery table schema is [sensorDataTable.json](https://github.com/DzRepo/RaspberryPI-CCS811-BME280-Google-Cloud/blob/master/sensorDataTable.json). The modifications (vs the codelab) allow for the extra fields for storing eco<sub>2</sub> and tvoc.
 
 [`https://cloud.google.com/bigquery/docs/schemas#using_a_json_schema_file`](https://cloud.google.com/bigquery/docs/schemas#using_a_json_schema_file) shows how to create the table using this file.
 
