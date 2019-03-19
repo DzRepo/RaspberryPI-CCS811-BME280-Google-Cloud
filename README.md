@@ -32,7 +32,13 @@ adafruit_bme280:
 And the css811 python library found here:
 [`https://github.com/sparkfun/CCS811_Air_Quality_Breakout`](https://github.com/sparkfun/CCS811_Air_Quality_Breakout)
 
-It also requires the gpoid service to be running, and the I2C baud rate to be lowered as described here:
+It also requires the pigpiod service to be running:
+
+```
+sudo systemctl enable pigpiod
+sudo systemctl start pigpiod 
+```
+Also, the I2C baud rate needs to be lowered as described here:
 
 [`https://learn.adafruit.com/adafruit-ccs811-air-quality-sensor/raspberry-pi-wiring-test`](https://learn.adafruit.com/adafruit-ccs811-air-quality-sensor/raspberry-pi-wiring-test)
 
@@ -46,9 +52,9 @@ oauth2 client: ```sudo pip install --upgrade oauth2client```
 
 Error Reporting: ```pip install google-cloud-error-reporting```
 
-(but follow along the codelab for the best instructions on installing google bits & connecting to the pub/sub points!)
+*(follow the codelab for the best instructions on installing google bits & connecting to the pub/sub points!)*
 
-The BigQuery table schema is [sensorDataTable.json](). The modifications allow for the extra fields for storing eco2 and tvoc.
+The BigQuery table schema is [sensorDataTable.json](). The modifications allow for the extra fields for storing eco<sub>2</sub> and tvoc.
 
 [`https://cloud.google.com/bigquery/docs/schemas#using_a_json_schema_file`](https://cloud.google.com/bigquery/docs/schemas#using_a_json_schema_file) shows how to create the table using this file.
 
