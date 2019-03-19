@@ -1,6 +1,6 @@
 # RaspberryPI-CCS811-BME280-Google-Cloud
 
-##Purpose:
+## Purpose:
 
 Gathers data from a Raspberry Pi connected [Sparkfun Environmental Combo Breakout](https://www.sparkfun.com/products/14348) and pushes it to Google Cloud (BigQuery)
 
@@ -8,12 +8,12 @@ This project is based on the Google Codelab:[*Building a Serverless Data Pipelin
 
 It was expanded to include the storage of the additional fields available with the CSS811 sensor.
 
-##Output
+## Output
 Besides a SQL table full of data, you can easily make charts to track changes, trends, etc. with Google DataStudio:
 
 ![Chart](https://github.com/DzRepo/RaspberryPI-CCS811-BME280-Google-Cloud/blob/master/Screenshot-Environmental%20Monitor-Chart-Hourly.png)
 
-##Requirements
+## Requirements
 Libraries:
 adafruit_bme280:
 ```sudo pip3 install adafruit-circuitpython-bme280```
