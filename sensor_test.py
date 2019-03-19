@@ -20,8 +20,8 @@ warmup_delay = 20 * 60 # (in seconds)- 20 minute warmup for the sensor is best p
 # set the following four constants to be indicative of where you are placing your weather sensor
 sensorID = "Plant1-NE"
 sensorZipCode = "80503"
-sensorLat = "40.129830"
-sensorLong = "-105.220616"
+sensorLat = "40.123456"
+sensorLong = "-105.11223344"
 
 # change project to your Project ID
 project="iot-analytics-pipeline-233117"
