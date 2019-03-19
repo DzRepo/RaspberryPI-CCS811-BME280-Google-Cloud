@@ -1,8 +1,17 @@
-# RaspberryPI-CCS811-BME280-Google-Cloud
+# RaspberryPI conected CCS811/BME280 to Google Cloud
 
-## Purpose:
+## Purpose
 
-Gathers data from a Raspberry Pi connected [Sparkfun Environmental Combo Breakout](https://www.sparkfun.com/products/14348) and pushes it to Google Cloud (BigQuery)
+Gathers environmental data:
+
+* Temperature
+* Humidity
+* Pressure
+* DewPoint (calculated)
+* Total Volitile Organic Compounds
+* Estimated CO<sub>2</sub> 
+
+from a Raspberry Pi connected [Sparkfun Environmental Combo Breakout](https://www.sparkfun.com/products/14348) and pushes it to Google Cloud via Pub/Sub, and stores the data in BigQuery
 
 This project is based on the Google Codelab:[*Building a Serverless Data Pipeline: IoT to Analytics*](https://codelabs.developers.google.com/codelabs/iot-data-pipeline/index.html#0)
 
@@ -43,5 +52,4 @@ The BigQuery table schema is [sensorDataTable.json](). The modifications allow f
 
 [`https://cloud.google.com/bigquery/docs/schemas#using_a_json_schema_file`](https://cloud.google.com/bigquery/docs/schemas#using_a_json_schema_file) shows how to create the table using this file.
 
-##Additional information
-
+Ping me on Twitter [@SteveDz](https://twitter.com/stevedz) if you have any questions.
