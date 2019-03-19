@@ -17,4 +17,9 @@ To talk to Google Cloud, you'll need:
 Pub/Sub: ```pip install --upgrade google-cloud-pubsub```
 Error Reporting: ```pip install google-cloud-error-reporting```
 
+The BigQuery table schema is sensorDataTable.json
+```https://cloud.google.com/bigquery/docs/schemas#using_a_json_schema_file``` shows how to create the table using this file.
+
+This project is based on the Google Codelab:*Building a Serverless Data Pipeline: IoT to Analytics*
+```https://codelabs.developers.google.com/codelabs/iot-data-pipeline/index.html#0```
 
